@@ -87,7 +87,7 @@ rs <- sread(reads)
 # library("Rsamtools")
 
 library("PST")
-testString <- toString(seqChr1[1:100000])
+testString <- toString(seqChr[100000:110000])
 testString <- gsub("([A-Z])", "-\\1", testString)
 testString <- substr(testString, 2, nchar(testString))
 seq1 <- seqdef(testString)
